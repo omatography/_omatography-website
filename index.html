@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--inf to browser ie meta data-->
+    <meta charset="UTF-8">
+    <meta name="description" content="_omatography">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Omkar R">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--  for responsive design 1-->
+
+    <title>_omatography</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"> <!-- om logo in title bar-->
+
+    <link rel="stylesheet" href="style.css">   <!--our css -->
+    <link rel="stylesheet" href="preloader.css"> <!-- css for preloader-->
+
+    <script src="https://kit.fontawesome.com/bb0ff336ae.js" crossorigin="anonymous"></script> <!--for icons from font awesome-->
+
+
+</head>
+<body onload="loading(); "> 
+    
+    <!--preloader haha -->
+    <div class="preloader">
+        <section class="wrapper dark">
+            <div class="spinner">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+          </section>
+    </div>
+
+
+    <!--slidenav when click contacts -->
+    <div class="slidebarcontainer">
+        <!-- exit icon from fontawesome when clicked go out haha -->
+        <i onclick="slidebaractive()" class="fas fa-times" id="exiticon"></i>                                                                          
+        <!--logo -->
+        <img src="logos/omblack.png" > 
+
+        <h4>CONTACT US</h4>
+        <!-- form daa -->
+        <div class="form">
+            <input type="text" class="box" value="Name?"><br>
+            <input type="email" class="box" value="Your Email?"><br>
+            <input type="submit" class="submit" value="Send your mail">
+        </form>
+        </div>
+        <!-- paragraph -->
+        <p>
+            We would be contacting you shortly!<br>
+            Please check your mail.<br><br>
+            For Further Contact:<br>
+            <span style="font-size:12px;">omkarslam420@gmail.com/ 8921376302</span>
+            
+        </p>
+        <!-- social icons -->
+        <div class="social">
+            <div class="ibox"><i class="fab fa-facebook-f"></i></div>
+            <div class="ibox"><i class="fab fa-twitter"></i></div>
+            <div class="ibox"><i class="fab fa-instagram"></i></div>
+        </div>
+    </div>
+
+    <!-- home portion haha-->
+    <div class="home" id="home" >
+
+        <!--navigation bar haha-->
+        <div class="nav" id="nb">
+            
+            <img src="Logos/omatographywhite.png" id="img"> <!-- logo-->
+            <!--list-->
+            <ul class="list"> 
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#activities"><li>Activities</li></a>
+                <li onclick="slidebaractive()">Contact</li> <!--because of sidenav-->
+           
+            </ul>
+        </div>
+
+        <!-- image carousel transition -->
+        <div class="carousel">
+            <div class="q1">
+            <div class="quote">WE DESIGN <br> YOUR DREAMS</div><br>
+            <div class="quote2">Want to enhance your Company in Digital Market?</div>><br>
+            <div class="contactspan" onclick="slidebaractive()">Contact Us</div>
+            </div>
+          
+        </div>
+        <!-- home footer  -->
+        <div class="hfooter">
+            <div class="fquote"> Welcome to _omatography, as we say <br>Adding Creativity to your Triumph!!</div>
+            <div class="scroll">
+             <section id="section07" class="demo">
+                <a href="#about"><span></span><span></span><span></span></a>
+             </section>
+            </div> 
+            <div class="frquote">Scroll down for more cool things!</div>   
+
+        </div>
+        
+        
+    </div>
+    <div style="width:100%; height: 20px; background-color: #333436;"></div>
+     <!--about page-->
+    <div class="about" id="about" >
+        <!-- header portion  -->
+        <div class="header">
+        <span class="quote">ADDING CREATIVITY TO YOUR<br> TRIUMPH</span>
+        <img src="logos/omatographywhite.png" >
+        </div>  
+        <!-- abt body -->
+        <div class="abtbody" id="off">
+            <!-- description -->
+        <div class="desccontainer"><br>
+           <div class="heading">ABOUT US</div><br> 
+            <p>_omatography Studios Ltd. is a renown UI/UX design solution company provide creative and impressive
+                designs to your company or startup. You can just focus on your product or work, we manage the
+                branding of your company. Design is important as it will act as a first impression to your brand.
+                Mainly we provide 3 services for you. 
+            </p>
+        </div>
+        <!-- image list  -->
+        <div class="imglist">
+            <div class="imglistc">
+            <!-- logo card     -->
+            <div class="imgcard">
+                <img src="logos/l1.png" alt="">
+                <div class="chead">GRAPHIC DESIGN</div>
+                <div class="para">Includes branding your company with amazing Logos,
+                    Ad Posters,Banners and many more.
+                </div>
+            </div>
+
+            <div class="imgcard">
+                <img src="logos/l2.png" alt="">
+                <div class="chead">Web DESIGN</div>
+                <div class="para">Includes both designing , hosting & managing of your Official Website.
+                </div>
+            </div>
+
+            <div class="imgcard">
+                <img src="logos/l3.png" alt="">
+                <div class="chead">DIGITAL MARKETING</div>
+                <div class="para">Includes Online Marketing of your brand in various Social Platforms like
+                    Youtube , Instagram etc.
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+     </div>
+   <!-- parallax  -->
+   <div class="parallax2">
+         
+   </div>
+   <!-- activities page  -->
+   <div class="activities" id="activities">
+       <!-- navspace haha  -->
+       <div class="navspace"></div>
+       <!-- act body  -->
+       <div class="actbody">
+       <div class="heading">ACTIVITIES</div>
+       <!-- collage  -->
+       <div class="collagec">
+       <div class="collage">
+           <!-- upper 3 -->
+           <div class="upper">
+               <!-- imagecard -->
+               <div class="imgcard">
+                   <img src="Images/ac1.png" alt="">
+                   <div class="para">BRANDING</div>
+               </div>
+               <div class="imgcard">
+                <img src="Images/ac2.png" alt="">
+                <div class="para">BANNER,POSTER <br> DESIGN</div>
+                </div>
+                <div class="imgcard">
+                <img src="Images/ac3.png" alt="">
+                <div class="para">TRADEMARK <br> MANAGEMENT</div>
+                </div>
+           </div>
+           <!-- lower 3 -->
+           <div class="lower">
+            <div class="imgcard">
+            <img src="Images/ac4.png" alt="">
+            <div class="para">WEB DESIGN</div>
+            </div>
+             <div class="imgcard">
+             <img src="Images/ac5.png" alt="">
+             <div class="para">DIGITAL CONTENT <br> CREATION</div>
+             </div>
+             <div class="imgcard">
+             <img src="Images/ac6.png" alt="">
+             <div class="para">DIGITAL <br> MARKETING</div>
+             </div>
+            </div>
+       </div>
+       </div>
+       <!-- footer  -->
+       <div class="footer">
+           <div class="follow">
+               <span class="para">Follow us on:</span>
+               <!-- social logos  -->
+               <span class="logos">
+                <div class="ibox"><i class="fab fa-facebook-f"></i></div>
+                <div class="ibox"><i class="fab fa-twitter"></i></div>
+                <div class="ibox"><i class="fab fa-instagram"></i></div>
+               </span>
+           </div>
+           <!-- copyright -->
+           <div class="allright">©2020 All rights reserved to Page Perfect | Terms & Conditions | Privacy Policy</div>
+       </div>
+       </div>
+   </div>
+
+    <!-- scripts js files  -->
+    <script src="script.js"></script>
+</body>
+</html>

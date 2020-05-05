@@ -1,0 +1,1040 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* slidebar style */
+.slidebarcontainer{
+    height:100vh;
+    width:320px;
+    background:rgba(0,0,0,0.85);
+    position: fixed;
+    z-index: 99;
+    right:-370px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    transition: left 0.5s;
+    -webkit-transition: 0.5s;
+}
+.slidebarcontainer.active{
+    right:0px;
+}
+
+.slidebarcontainer.noactive{
+    right:-25%;
+}
+
+#exiticon{
+    font-size:25px;
+    color:white;
+    position: absolute;
+    right:30px;
+    top:30px;
+}
+#exiticon:hover{
+    color:#2C5DFA;
+}
+
+.slidebarcontainer img{
+    width:140px;
+    display: block;
+    margin:0 auto;
+    position: relative;
+    top:80px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sen:700&display=swap');
+.slidebarcontainer h3{
+    
+    font-family: 'Sen',sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    color:white;
+    position: relative;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+.slidebarcontainer h4{
+    font-family: 'Sen', sans-serif;
+    font-size:18px;
+    color:white;
+    text-align: center;
+    position: relative;
+    top:100px;
+}
+
+.slidebarcontainer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:13px;
+    color:white;
+    text-align: center;
+    position: relative;
+    top:200px;
+
+}
+
+.form{
+    position: relative;
+    top:100px;
+}
+.box{
+    width:220px;
+    height:33px;
+    border-radius: 30px;
+    margin: 7px;
+    font-family: 'Montserrat',sans-serif;
+    font-size:13px;
+    color:gray;
+    border: 0;
+    display: block;
+    margin : 0 auto;
+    position: relative;
+    top:20px;
+}
+.submit{
+    width:120px;
+    height:40px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 0;
+    padding:5px;
+    background-color:#2C5DFA ;
+    color:white;
+    transition:0.5s;
+    margin:10px;
+    position: relative;
+    top:30px;
+    display: block;
+    margin: 0 auto;
+}
+.submit:hover{
+    background-color: white;
+    color:gray;
+}
+
+.social{
+    position: relative;
+    top:240px;
+    display: flex;
+    justify-content: center;
+}
+.social i{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top:10.5px;
+    left:10.5px;
+    
+}
+.ibox{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    transition: 0.4s;
+    border-radius: 20px;
+    margin:8px;
+}
+.ibox:hover{
+    background-color:#2C5DFA ;
+}
+
+/* navbar style haha */
+.nav{
+    width:100%;
+    height:100px;
+    position:fixed;
+    z-index:9;
+    transition: 0.3s ease-in-out;
+}
+
+#navoff{
+    top:-100px;
+}
+
+.nav img{
+    width:240px;
+    background: url('Logos/omatographywhite.png');
+    position:relative;
+    left:8%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav .list{
+    float:right;
+    list-style-type: none;
+    position: relative;
+    right:8%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+.nav .list li{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color:white;
+    display:inline;
+    padding:13px;
+    margin:1px;
+    transition: 0.3s;
+    border-radius: 35px;
+}
+
+.nav .list li:hover{
+   background-color:#2C5DFA;
+}
+
+#nb{
+    background-color: rgba(0,0,0,0.4);
+}
+
+#nbl{
+    background-color: black;
+}
+
+
+/* home style */
+.home{
+    width:100%;
+    height:100vh;
+}
+
+/* transition carousel */
+.carousel{
+    width:100%;
+    height:80vh;
+    background:url('Images/c1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: carslide 24s infinite linear;
+}
+
+@keyframes carslide{
+    0%{background:url('Images/c1.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;}
+    25%{background:url('Images/c2.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;}
+    50%{background:url('Images/c3.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;}
+    75%{background:url('Images/c4.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;}
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+.q1{
+    width:32%;
+    position: relative;
+    left:8%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.q1 .quote{
+    font-family: 'Montserrat', cursive;
+    font-size: 4VW;
+   color: white;
+   font-weight: bolder;
+   position: relative;
+   text-shadow: 0px 0px 3px rgba(150, 150, 150, 0.27);
+   
+
+}
+.q1 .quote2{
+    font-family: 'Montserrat', cursive;
+    font-size: 1.15vw;
+    color: white;
+    position: relative;
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 0.27);
+    
+
+}
+
+.q1 .contactspan{
+    font-family: 'Montserrat', cursive;
+    font-size: 1.1vw;
+    color: white;
+    padding:10px;
+    text-align: center;
+    border:2px solid white;
+    border-radius: 1.5vw;
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 0.27);
+    width: 14vw;
+    transition: 0.13s ease-in-out;
+}
+.q1 .contactspan:hover{
+    background-color: #2C5DFA;
+    opacity: 0.8;
+    border-color: #2C5DFA;
+}
+@media screen and (max-width:1000px)
+{
+    .q1{
+        width:70%;
+    }
+    .q1 .quote{
+        font-size: 40px;
+    
+    }
+    .q1 .quote2{
+        font-size: 15px;
+
+    }
+    
+    .q1 .contactspan{
+        font-size: 15px;
+        left:30%;
+    }
+     
+}
+
+/* home footer  */
+.hfooter{
+    width:100%;
+    height:20vh;
+    background-color: #333436;
+    position: relative;
+}
+
+.fquote{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    color: white;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    float:left;
+    width:40%;
+    text-align:center;
+}
+
+.frquote{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    color: white;
+    top:50%;
+    transform: translateY(-50%);
+    float:left;
+    position: relative;
+    width:40%;
+    text-align:center;
+    
+}
+
+/* about style  */
+.about{
+    height:100vh;
+    width:100%;
+    background: url('Images/aboutimg.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.about .header{
+    width:100%;
+    height:26vh;
+    position: relative;
+    
+
+}
+@import url(//db.onlinewebfonts.com/c/c9f309b3d47969ecac64a77a6c672594?family=Nexa+Bold);
+.about .header .quote{
+     font-family: 'Nexa+Bold',sans-serif;
+     color: white;
+     font-size: 2.3vw;
+     font-weight: bold;
+     float:left;
+     position: relative;
+     top:100px;
+     left:25.5%;
+
+
+}
+.about .header img{
+    width:20vw;
+    float: left;
+    position: relative;
+    top:120px;
+    left:30%;
+}
+
+@media screen and (max-width:900px){
+    .about .quote{
+        font-size:20px;
+    }
+    .about img{
+        width:150px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .about .quote{
+        left:9%;
+        font-size: 17px;
+    }
+    .about img{
+        left:14%;
+    }
+   
+}
+
+
+.about .abtbody{
+    width:100%;
+    height:74vh;
+    background: rgba(0,0,0,0.55);
+    transition: 0.4s ease-in-out;
+    
+}
+/* description */
+.about .desccontainer{
+    width:100%;
+    height:25vh;
+    position: relative;
+    
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+.about .desccontainer .heading{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-size:34px;
+    text-align: center;
+    
+
+}
+.about .desccontainer p{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-left:8%;
+    margin-right: 8%;
+    
+
+}
+
+/* img list  */
+.about .imglist{
+    height:49vh;
+    width:100%;
+}
+.about .imglistc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.about .imglist .imgcard{
+    width:18vw;
+    height:270px;
+    border-radius: 50px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    float: left;
+    margin-left:20px;
+    margin-right: 20px;
+
+}
+
+.about .imglist .imgcard:hover{
+    background-color: #2C5DFA;
+
+}
+   
+.about .imglist .imgcard img{
+    width:90px;
+    height:90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:7px;
+
+}
+.about .imglist .imgcard .chead{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    margin-top:20px;
+}
+
+.about .imglist .imgcard .para{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    color:white;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width:80%;
+    margin-top: 20px;;
+}
+
+/* parallax  */
+.parallax2{
+    width:100%;
+    height: 300px;
+    background-image: url('Images/scr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* activities  */
+ .activities .navspace{
+    height:98px;
+    width:100%;
+    background-color: black;
+} 
+.space{
+    width:100%;
+    height:50px;
+}
+.activities{
+    width: 100%;
+    height: 100vh;
+    background:url('Images/actbg.png');
+    background-position: center;
+    background-size: cover;
+}
+ .activities .heading{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-size:34px;
+    text-align: center;
+    position: relative;
+
+ }
+
+ /* collage  */
+.activities .collage{
+    width:84%;
+    margin:0 auto;
+    top:50%;
+    transform: translateY(-50%);
+    position: relative;
+
+}
+.activities .collagec{
+    width:100%;
+    height:66vh;
+
+}
+.upper{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.lower{
+    display: flex;
+    justify-content: center;
+}
+.activities .collage .imgcard{
+    width:320px;
+    height:190px;
+    background-color: rgba(0,0,0,0.45);
+    float: left;
+    margin-left:50px;
+    margin-right: 50px;
+}
+.activities .collage .imgcard img{
+    width:320px;
+    height:190px;
+    transition: 0.4s ease-in-out;
+    filter: brightness(80%);
+}
+
+.activities .collage .imgcard img:hover{
+    
+    transform: scale(1.2);
+    filter: brightness(30%);
+}
+
+.activities .collage .imgcard img:hover > .para{
+    
+    font-size: 20px;
+}
+.activities .collage .imgcard img:hover .para{
+    
+    display:block;
+}
+.activities .collage .imgcard .para{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-size:27px;
+    font-weight: bold;
+    display:none;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:-120px;
+}
+/* footer  */
+.activities .footer{
+    width:100%;
+    height:13vh;
+    background-color: rgba(0,0,0,0.55);
+
+
+}
+
+.activities .footer .para{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-size:17px;
+    position: relative;
+    left:8%;
+
+}
+
+.activities .footer .allright{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-size:14px;
+    float: right;
+    position: relative;
+    bottom:5px;
+    right:8%;
+
+}
+ .activities .logos{
+    position: relative;
+    top:30px;
+
+}
+.activities .follow .logos i{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top:10.5px;
+    left:10.5px;
+    
+}
+.activities .follow .logos .ibox{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    transition: 0.4s;
+    border-radius: 20px;
+    margin:8px;
+}
+.activities .follow .logos .ibox:hover{
+    background-color:#2C5DFA ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inspired style */
+
+/* the mighty scroll haha  */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+#section07 a {
+    padding-top: 80px;
+    
+  }
+  #section07 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    
+    margin-left: -12px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  #section07 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  #section07 a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+  }
+  #section07 a span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+  .demo a {
+    
+    
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    float: left;
+    position: relative;
+    width:20%;
+    height:100px;
+    position: relative;
+    top:33px;
+    
+  }
+ 
+ 
+  .demo a:hover {
+    opacity: .5;
+  }
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+/* preloader haha  */
+
+.preloader{
+    width:100%;
+    
+    position:fixed;
+    z-index:99;
+
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  section.wrapper.dark {
+    background:black;
+    height:100vh;
+    width:100%;
+  }
+  
+  div.spinner {
+    -moz-animation: rotate 10s infinite linear;
+    -webkit-animation: rotate 10s infinite linear;
+    animation: rotate 10s infinite linear;
+    position: relative;
+    margin:0 auto;
+    top:300px;
+    display: block;
+    margin: auto;
+    width: 142px;
+    height: 142px;
+  }
+  div.spinner i {
+    -moz-animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
+    -webkit-animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
+    animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
+    -moz-transform-origin: 50% 100% 0;
+    -webkit-transform-origin: 50% 100% 0;
+    transform-origin: 50% 100% 0;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    border: solid 6px transparent;
+    border-bottom: none;
+  }
+  div.spinner i:nth-child(1) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
+    width: 44px;
+    height: 22px;
+    margin-top: -22px;
+    margin-left: -22px;
+    border-color: #2172b8;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+  }
+  div.spinner i:nth-child(2) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
+    width: 58px;
+    height: 29px;
+    margin-top: -29px;
+    margin-left: -29px;
+    border-color: #18a39b;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+  }
+  div.spinner i:nth-child(3) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
+    width: 72px;
+    height: 36px;
+    margin-top: -36px;
+    margin-left: -36px;
+    border-color: #82c545;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+  }
+  div.spinner i:nth-child(4) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
+    width: 86px;
+    height: 43px;
+    margin-top: -43px;
+    margin-left: -43px;
+    border-color: #f8b739;
+    border-top-left-radius: 54px;
+    border-top-right-radius: 54px;
+  }
+  div.spinner i:nth-child(5) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
+    width: 100px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-color: #f06045;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+  div.spinner i:nth-child(6) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
+    width: 114px;
+    height: 57px;
+    margin-top: -57px;
+    margin-left: -57px;
+    border-color: #ed2861;
+    border-top-left-radius: 66px;
+    border-top-right-radius: 66px;
+  }
+  div.spinner i:nth-child(7) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
+    width: 128px;
+    height: 64px;
+    margin-top: -64px;
+    margin-left: -64px;
+    border-color: #c12680;
+    border-top-left-radius: 72px;
+    border-top-right-radius: 72px;
+  }
+  div.spinner i:nth-child(8) {
+    -moz-animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
+    animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
+    width: 142px;
+    height: 71px;
+    margin-top: -71px;
+    margin-left: -71px;
+    border-color: #5d3191;
+    border-top-left-radius: 78px;
+    border-top-right-radius: 78px;
+  }
+  
+  @-moz-keyframes rotate {
+    to {
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rotate {
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    to {
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  i{
+    font-size: 100px;
+    color: black;
+  }
+
+
+
+
+/* custom scrollbar for chrome ie:webkit haha will not wok for others */
+
+::-webkit-scrollbar              { width:7px; }
+::-webkit-scrollbar-button       { background-color: black; }
+::-webkit-scrollbar-track        { background-color: black; }
+::-webkit-scrollbar-track-piece  {  }
+::-webkit-scrollbar-thumb        { background-color: black;border-radius: 4px; border:1.4px solid white;  }
+::-webkit-scrollbar-thumb:hover       { background-color:#888883;border-radius: 4px;border:2px solid #2C5DFA }
+::-webkit-scrollbar-corner       { background-color: black;}
+::-webkit-resizer                { background-color: black; } 
+
+
+
+/* responsive web design hahaha */
+
+/* for tab  */
+@media screen and (max-width:760px)     
+{
+   /* navbar style haha */
+.nav img{
+    width:180px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:20px;
+}
+
+.nav .list{
+    position: absolute;
+    top:60px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.nav .list li{ 
+    font-size: 12px;
+}
+
+/* sidenav  */
+.slidebarcontainer{
+   width:200px;
+}
+
+#exiticon{
+    font-size:20px;
+}
+
+.slidebarcontainer img{
+    width:100px;
+}
+
+.slidebarcontainer h3{
+    font-size: 17px;
+}
+
+.slidebarcontainer h4{
+    font-size:14px;
+}
+
+.slidebarcontainer p{
+    font-size:11px;
+}
+
+.box{
+    width:130px;
+    height:27px;
+}
+.submit{
+    width:100px;
+    height:33px;
+    font-size: 10px;
+}
+
+.social i{
+    font-size: 20px;
+}
+.ibox{
+    width:40px;
+    height:40px;
+}
+
+}
+@media screen and (max-width:720px)
+{
+    .nav .list li{
+        font-size: 10px;
+    }
+}
+/* for mobile */
+@media screen and (max-width:480px)
+{
+    .nav .list{
+        display: none;
+    }
+   .nav img{
+       display: block;
+       margin:0 auto;
+   }
+}
